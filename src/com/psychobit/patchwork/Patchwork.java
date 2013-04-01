@@ -213,6 +213,10 @@ public class Patchwork extends JavaPlugin implements Listener
 		
 		// Alias
 		Player player = e.getEntity();
+		if(player.getLocation().getY()<0) {
+			// Fell into void, No chests necessary
+			return;
+		}
 		List<ItemStack> drops = e.getDrops();
 		Location loc = player.getLocation();
 		World world = player.getWorld();
