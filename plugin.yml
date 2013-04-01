@@ -1,0 +1,8 @@
+name: Patchwork
+main: com.psychobit.patchwork.Patchwork
+version: 1.0
+description: Various patches to improve functionality and patch security holes
+commands:
+   patchwork-reload:
+      description: Reloads patchwork
+      usage: /<command>
